@@ -201,13 +201,40 @@ body {
   border: none;
   border-radius: 40px;
 }
-.main__video-section{
+.main__video-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1rem;
   gap: 1rem;
+  background-color: #f9f9f9;
+  border-bottom: 4px solid #e3e3e3;
 }
 .main__video-section__video {
-  height: 170px;
-  background-color: #245fcc;
+  height: 250px;
+  display: grid;
+  grid-auto-flow: row;
+}
+.main__video-section__video__items {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  align-content: center;
+  place-items: center;
+}
+.main__video-section__video__picture {
+  height: 90%;
+}
+/*I need to figure out why this works and the actual img class doesn't */
+.main__video-section__video__items img {
+  border-radius: 50%;
+  width: 35px;
+}
+.main__video-section__video-info {
+  margin-left: 3rem;
+}
+.text {
+  font-size: 0.8rem;
+  color: #838383;
 }
