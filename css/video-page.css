@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+img {
+  width: 100%;
+}
+
+body {
+  /* background-color:pink; */
+  display: grid;
+  grid-template:
+    "header header" auto
+    "main right-menu" 1fr /
+    1fr 200px;
+}
+/*HEADER SECTION */
+.header {
+  grid-area: header;
+  background-color: white;
+  display: grid;
+  grid-auto-flow: row;
+
+  gap: 0.5rem;
+}
+/*HEADER TOP SECTION */
+.header__top {
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+}
+.header__top button {
+  border: none;
+  background: none;
+}
+/* HEADER TOP, LEFT MENU SECTIOM */
+.header__left-menu {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: white;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  padding: 1rem;
+}
+.header__left-menu__menu {
+  color: #717171;
+}
+.youtube-logo {
+  width: 80px;
+}
+/*HEADER TOP, MAIN SECTION - SEARCH BAR AND ITS ELEMENTS*/
+.header__main {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 10rem;
+  border-bottom: 2px solid #eeeeee;
+}
+/*HEADER TOP, SEARCH BAR */
+.search-bar {
+  border: 2px solid #e3e3e3;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #969696;
+  height: 40px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/*HEADER TOP, SEARCH BAR, MAGNIFYING GLASS */
+.magnifying-glass span {
+  color: #8a8a8a;
+  background-color: #f8f8f8;
+  border-top: 2px solid #e3e3e3;
+  border-bottom: 2px solid #e3e3e3;
+  border-right: 2px solid #e3e3e3;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/*HEADER TOP, SEARCH BAR, SEARCH WITH YOUR VOICE (MIC) */
+.search-with-your-voice span {
+  display: grid;
+  place-content: center;
+  padding-left: 1rem;
+  color: #606060;
+}
+/*HEADER TOP, RIGHT MENU*/
+.header__right-menu {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  padding: 1rem;
+  gap: 1rem;
+  border-bottom: 2px solid #eeeeee;
+  place-content: center;
+}
+.youtube-apps {
+  color: #595959;
+}
+.more {
+  color: #595959;
+}
+.sign-in__text {
+  font-weight: 550;
+}
+/*SIGN IN BUTTON */
+.header__right-menu__sign-in .sign-in {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  color: #245fcc;
+  border: 2px solid #245fcc;
+  place-items: center;
+  gap: 0.5rem;
+  border: 2px solid #245fcc;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+.sign-in {
+  margin-bottom: 0.7rem;
+}
+.main {
+  grid-area: main;
+  background-color: red;
+  min-height: 100vh;
+}
+.right-menu {
+  grid-area: right-menu;
+  background-color: rgb(85, 72, 74);
+}
+.youtube-video {
+  width: 500px;
+}
