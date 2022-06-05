@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YouTube</title>
     <link rel="stylesheet" href="/css/video-page.css">
     <link
     rel="stylesheet"
@@ -18,6 +18,7 @@
         <button class="header__left-menu__menu">
           <span class="material-symbols-outlined"> menu </span>
         </button>
+        <a href="/pages/index.html">
         <button class="header__left-menu__youtube-logo">
           <img
             class="youtube-logo"
@@ -25,6 +26,7 @@
             alt="YouTube logo"
           />
         </button>
+      </a>
       </div>
       <div class="header__main">
         <input class="search-bar" type="text" placeholder="Search" />
@@ -53,12 +55,65 @@
       </div>
   </header>  
   <main class="main">
-    <div class="main__video">
-      <video class="youtube-video"
-        src="/youtube-video.mp4"
-        controls></video>
+    <video class="youtube-video"
+      src="/youtube-video.mp4"
+      controls>
+    </video>
+      <div class="main__video__title">
+        Random video title (Official video)
+      </div>
+    <div class="video-items">
+      <div class="main__video-items">
+        <div class="main__video-items__views-date">
+        38,352,290 views • 11 May 2018
+        </div>
+      </div>
+      <div class="main__video-items__more-items">
+        <div class="main__video-items__likes items">
+        <span class="material-symbols-outlined">
+         thumb_up 
+        </span>
+        <span class="number"> 382K</span>
+        </div>
+        <div class="main__video-items__dislikes items">
+        <span class="material-symbols-outlined">
+          thumb_down 
+        </span>
+        <span class="number"> 7.8K</span>
+        </div>
+        <div class="main__video-items__share items">
+        <span class="material-symbols-outlined">
+          share
+        </span>
+        </div>
+        <div class="main__video-items__save items">
+        <span class="material-symbols-outlined">
+          save
+        </span>
+        <span class="text">SAVE</span>
+        </div>
+        <div class="main__video-items__more items">
+        <span class="material-symbols-outlined">
+          more_horiz
+        </span>
+        </div>
+      </div>
     </div>
-  <div class="main__video-description"></div>
+    <div class="main__channel-subscribe">
+      <div class="main__channel">
+        <img  
+          class="channel-profile-picture"
+          src="https://images.pexels.com/photos/8573621/pexels-photo-8573621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="channel profile picture">
+         <div class="main__channel__name">
+           Shortclips
+           <p class="main__channel__subscribers">656K subscribers</p>
+        
+         </div>
+      </div>
+      <button class="main__subscribe">SUBSCRIBE</button>
+    </div>
+
   </main>
   <aside class="right-menu">
     hello

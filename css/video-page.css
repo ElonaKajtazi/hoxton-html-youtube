@@ -15,7 +15,7 @@ body {
   grid-template:
     "header header" auto
     "main right-menu" 1fr /
-    1fr 200px;
+    1fr 300px;
 }
 /*HEADER SECTION */
 .header {
@@ -126,13 +126,81 @@ body {
 }
 .main {
   grid-area: main;
-  background-color: red;
+  background-color: #f9f9f9;
   min-height: 100vh;
+  display: grid;
+  grid-auto-flow: row;
+}
+.youtube-video {
+  width: 1000px;
+  padding: 1rem;
+}
+.main__video__title{
+  font-size: larger;
+  font-weight: bold;
+  padding: 1rem;
+}
+.video-items {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 0.5rem;
+  border-bottom: 2px solid #e7e7e7;
+  color: #686868
+}
+.main__video-items {
+  margin-left: 1rem;
+}
+.main__video-items__more-items {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 1rem;
+  padding-left: auto;
+  margin-right: 6rem;
+
+}
+.items {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 0.5rem;
+}
+.main__channel-subscribe {
+  display: grid;
+  grid-auto-flow: column;
+}
+.main__channel {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  place-items: center;
+  
+}
+
+.channel-profile-picture {
+  border-radius: 50%;
+  width: 50px;
+  margin: 1rem;
+}
+.main__channel__name{
+  font-weight: bold;
+}
+.main__channel__subscribers {
+  font-weight: lighter;
+  color: #737373;
+}
+.main__subscribe{
+  width: 120px;
+  height: 40px;
+  border:none;
+  display: grid;
+  place-items: center;
+  margin-top: 1rem;
+  margin-left: 35rem;
+  background-color: #bb271a;
+  color: white;
 }
 .right-menu {
   grid-area: right-menu;
   background-color: rgb(85, 72, 74);
-}
-.youtube-video {
-  width: 500px;
 }
