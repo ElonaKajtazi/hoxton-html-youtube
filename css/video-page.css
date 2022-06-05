@@ -23,8 +23,9 @@ body {
   background-color: white;
   display: grid;
   grid-auto-flow: row;
-
   gap: 0.5rem;
+  position: sticky;
+  top: 0%
 }
 /*HEADER TOP SECTION */
 .header__top {

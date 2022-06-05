@@ -10,6 +10,7 @@ img {
 }
 a {
   text-decoration: none;
+  color: black;
   
 
 }
@@ -28,8 +29,9 @@ body {
   background-color: white;
   display: grid;
   grid-auto-flow: row;
-
   gap: 0.5rem;
+  position: sticky;
+  top: 0%
 }
 /*HEADER TOP SECTION */
 .header__top {
@@ -143,6 +145,10 @@ body {
   margin-left: 0.7rem;
   align-items: center;
 }
+/* .left-menu__item :hover {
+  background-color: red; 
+  
+} */
 .home {
   padding-top: 0%;
 }
@@ -199,6 +205,7 @@ body {
   border-bottom: 2px solid #eeeeee;
   background-color: white;
   padding: 0.5rem;
+
 }
 .main__top__item {
   padding: 0.6rem;
